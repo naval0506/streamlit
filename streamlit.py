@@ -21,7 +21,7 @@ warnings.filterwarnings('ignore')
 
 # ========================= CONFIGURATION =========================
 # Clé API OpenAI (à définir directement)
-OPENAI_API_KEY = "sk-your-openai-api-key-here"  # Remplacez par votre vraie clé
+OPENAI_API_KEY = st.secrets["openai"]["api_key"] # Remplacez par votre vraie clé
 
 st.set_page_config(
     page_title="DataInsight Pro",
